@@ -52,7 +52,7 @@ git clone https://github.com/intelligenerator/aquila.git
 cd aquila/
 git submodule init
 git config submodule.recurse true
-git submodule update
+git submodule update --init --recursive
 ```
 
 Next, installed the required packages. This may vary based on your system
