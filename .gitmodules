@@ -1,0 +1,12 @@
+[submodule "perses"]
+	path = perses
+	url = https://github.com/intelligenerator/perses.git
+[submodule "inundatio"]
+	path = inundatio
+	url = https://github.com/intelligenerator/inundatio.git
+[submodule "theia"]
+	path = theia
+	url = https://github.com/intelligenerator/theia.git
+[submodule "unet"]
+	path = unet
+	url = https://github.com/intelligenerator/unet.git
