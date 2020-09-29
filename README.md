@@ -4,8 +4,10 @@
     <p>Assess building damage from satellite images.</p>
 </div>
 
-<div style='margin:0 auto;width:80%;'>
-    <img alt="Example damage assessment" src="static/cover.png" style="width:100%">
+<div style='margin:0 auto;width:80%;' align='center'>
+
+<img alt="Example damage assessment" src="static/cover.png" style="width:100%">
+
 </div>
 
 ## Table of Contents
