@@ -6,6 +6,8 @@
 #           |_|
 #
 
+import time
+
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -57,6 +59,7 @@ perses.load_state_dict(torch.load(PERSES_MODEL))
 perses.eval()
 perses = perses.to(dev)
 
+t0 = time.perf_counter()
 
 before = crop(before)
 
@@ -91,7 +94,8 @@ for bbox in coords:
 
     draw_bbox(ax, bbox, damage)
 
-if opt.save:
-    plt.savefig(opt.save)
-else:
-    plt.show()
+t1 = time.perf_counter()
+if opt.time:
+    print('Took %.3f s to evaluate' % (t1 - t0))
+
+plt.savefig(opt.save) if opt.save else plt.show()

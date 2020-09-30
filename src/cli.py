@@ -20,6 +20,8 @@ parser.add_argument('--threshhold', type=float, default=0.10,
 parser.add_argument('--perses', type=str,
                     default='./perses/model/perses.pt', help='path to perses model')
 parser.add_argument('--no-cuda', action='store_true', help='disables cuda')
+parser.add_argument('--time', action='store_true',
+                    help='measure performance time')
 parser.add_argument('--save', type=str, default='',
                     help='filename to save output file to')
 
