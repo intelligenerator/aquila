@@ -15,7 +15,8 @@
 -   [Getting Started](#getting-started)
     -   [Prerequisites](#prerequisites)
     -   [Initial setup](#initial-setup)
-    -   [Running the notebook](#running-the-notebook)
+    -   [Downloading theia](#downloading-theia)
+    -   [Running the CLI](#running-the-cli)
 -   [Contributing](#contributing)
 -   [Versioning](#versioning)
 -   [Authors](#authors)
@@ -73,7 +74,15 @@ conda deactivate
 
 Happy coding!
 
-### Running the cli
+### Downloading theia
+
+You will probably want to download a set of pretrained weights for theia, the
+building segmentation network, to just try aquila and save some training time.
+
+Download `theia.pth` from Google Drive and place this file in `theia/model`:
+https://drive.google.com/file/d/1qmKnqw9s5oAXDWJHxEhVID48KNTxbLM_/view?usp=sharing
+
+### Running the CLI
 
 To run the aquila cli, make sure you followed the installation steps listed
 above.
