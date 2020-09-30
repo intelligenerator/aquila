@@ -80,7 +80,9 @@ You will probably want to download a set of pretrained weights for theia, the
 building segmentation network, to just try aquila and save some training time.
 
 Download `theia.pth` from Google Drive and place this file in `theia/model`:
-https://drive.google.com/file/d/1qmKnqw9s5oAXDWJHxEhVID48KNTxbLM_/view?usp=sharing
+<a href="https://drive.google.com/file/d/1qmKnqw9s5oAXDWJHxEhVID48KNTxbLM_/view?usp=sharing" target="_blank">
+https://drive.google.com/file/d/1qmKnqw9s5oAXDWJHxEhVID48KNTxbLM\_/view?usp=sharing
+</a>
 
 ### Running the CLI
 
