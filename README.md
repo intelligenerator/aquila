@@ -31,15 +31,15 @@ local machine for development and testing purposes.
 ### Prerequisites
 
 You will need python3 and pip3 installed on your machine. You can install it
-from the official website https://www.python.org/.
+from the official website [https://www.python.org/](https://www.python.org/).
 
 To install pytorch with CUDA support, conda is recommended. An installation
 guide is available in the conda docs:
-https://docs.conda.io/projects/conda/en/latest/user-guide/install/
+[https://docs.conda.io/projects/conda/en/latest/user-guide/install/](https://docs.conda.io/projects/conda/en/latest/user-guide/install/).
 
 To be able to view und run the example notebooks on your machine, jupyter is
 required. An installation guide can be found on their website:
-https://jupyter.org/install
+[https://jupyter.org/install](https://jupyter.org/install).
 
 ### Initial setup
 
@@ -58,7 +58,7 @@ git submodule update --init --recursive
 
 Next, installed the required packages. This may vary based on your system
 hardware and requirements. Read more about pytorch installation:
-https://pytorch.org/get-started/locally/
+[https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/)
 
 ```bash
 conda create --name torch
