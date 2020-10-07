@@ -11,8 +11,10 @@ print("""
 """)
 
 parser = argparse.ArgumentParser()
-parser.add_argument('pre', type=str, help='path to pre disaster image')
-parser.add_argument('post', type=str, help='path to post disaster image')
+parser.add_argument('pre', type=str, nargs='?',
+                    help='path to pre disaster image')
+parser.add_argument('post', type=str, nargs='?',
+                    help='path to post disaster image')
 parser.add_argument('--theia', type=str,
                     default='./theia/model/theia.pth', help='path to theia model')
 parser.add_argument('--threshhold', type=float, default=0.10,

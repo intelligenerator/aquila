@@ -11,6 +11,8 @@ import time
 import matplotlib.pyplot as plt
 import numpy as np
 
+from tkinter import filedialog
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -32,9 +34,11 @@ from src.vis import add_padding, draw_bbox
 THEIA_MODEL = opt.theia
 PERSES_MODEL = opt.perses
 
-PRE = opt.pre
-POST = opt.post
+PRE = opt.pre or filedialog.askopenfilename(title='Choose pre-disaster image')
+POST = opt.post or filedialog.askopenfilename(
+    title='Choose post-disaster image')
 
+assert PRE and POST
 
 before = Image.open(PRE)
 after = Image.open(POST)
