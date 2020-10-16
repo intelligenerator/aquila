@@ -12,6 +12,7 @@
 
 ## Table of Contents
 
+-   [How it works](#how-it-works)
 -   [Getting Started](#getting-started)
     -   [Prerequisites](#prerequisites)
     -   [Initial setup](#initial-setup)
@@ -22,6 +23,24 @@
 -   [Authors](#authors)
 -   [License](#license)
 -   [Acknowledgments](#acknowledgments)
+
+## How it works
+
+Aquila is a data pipeline for damage assessment after natural catastrophes.
+
+![Data Pipeline Chart](./static/chart.png)
+
+The pipeline consists of following elements:
+
+1. Images of the xBD dataset are loaded from disk.
+2. [theia](theia/) processes the image and outputs segmentation maps indicating
+   building locations.
+3. [inundatio](inundatio/) cuts out buildings based on the segmentation map
+   obtained in the previous step using the flood-fill algorithm.
+4. [perses](perses/) assesses the damage of each building.
+
+Segmentation maps obtained from theia can be tiled. This allows for damage
+assessment across greater geographical areas.
 
 ## Getting Started
 
